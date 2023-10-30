@@ -1,24 +1,3 @@
-// import {
-//     Button,
-// } from "@material-tailwind/react";
-
-// function RecipeCard( {name, ingredients, instructions, image} ) {
-
-//     return (
-//         <div className="flex flex-col mt-6 w-4/5 min-h-96 lg:w-96 lg:h-[28rem] overflow-y-hidden border-2 rounded-lg shadow-md box-border items-center p-3">
-//             <img src={image} alt="Meal image" className=" h-[50%] lg:h-[40%] w-full" />
-//             <h3 className="mt-5 font-Oswald text-xl md:text-2xl">{name}</h3>
-//             <p>{ingredients}</p>
-//             <a href={instructions}><Button>Learn More</Button></a>
-//         </div>
-
-//     )
-
-// }
-
-
-// export default RecipeCard;
-
 import React from "react";
 import { Button } from "@material-tailwind/react";
 

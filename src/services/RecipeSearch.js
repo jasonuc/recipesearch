@@ -1,5 +1,5 @@
-const YOUR_APP_ID = process.env.YOUR_APP_ID;
-const YOUR_APP_KEY = process.env.YOUR_APP_KEY;
+const YOUR_APP_ID = '7648f909';
+const YOUR_APP_KEY = 'fb318184e3dcb826d8009c6332d7f4c8';
 
 async function fetchRecipes(mealName) {
   const apiUrl = `https://api.edamam.com/search?q=${mealName}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}`;

@@ -5,8 +5,6 @@ function CardsSection({ results }) {
     const [renderedResults, setRenderedResults] = useState([]);
     
     useEffect(() => {
-        console.log("Results received:", results);
-        // Whenever the results prop changes, update the renderedResults state
         setRenderedResults(results);
     }, [results]);
 

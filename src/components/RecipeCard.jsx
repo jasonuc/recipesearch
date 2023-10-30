@@ -8,7 +8,7 @@ function RecipeCard({ name, ingredients, instructions, image }) {
             <img src={image} alt="Meal" className="h-40 lg:h-48 w-full object-cover" />
             <div className="mt-5 text-center px-3">
                 <h3 className="font-Oswald text-xl md:text-2xl h-16 overflow-hidden mt-2">{name}</h3>
-                <p className="min-h-25 md:h-[10rem] overflow-y-auto">{ingredients}</p>
+                <p className="min-h-25 md:h-[10rem] overflow-y-auto">{ingredients.join(", ")}</p>
             </div>
             <a href={instructions} target="_blank" rel="noopener noreferrer" className="my-5">
                 <Button color="orange">Learn More</Button>

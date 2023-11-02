@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className=' flex flex-col items-center overflow-x-hidden h-screen bg-alabaster'>
-      <Title />
+      <Title setInput={setInput} setResults={setResults} />
       <div className=' flex flex-col items-center w-[90%] flex-grow mt-5'>
         <SearchAndSubmit input={input} setInput={setInput} setResults={setResults} />
         <CardsSection results={results} />

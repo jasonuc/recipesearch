@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Input, Button } from "@material-tailwind/react";
 import fetchRecipes from "../services/RecipeSearch";
 
@@ -7,17 +8,14 @@ function SearchAndSubmit({ input, setInput, setResults }) {
         setInput(event.target.value)
     }
 
-    async function handleClick() {
-
-        try {
-          const recipes = await fetchRecipes(input);
-          setResults(recipes);
-        } catch (error) {
-          console.error("Error fetching recipes:", error);
-        }
+    function handleClick() {
+        fetchRecipes(input).then(
+            hits => {
+                setResults(hits)
+            }
+        )
         setInput("")
-      }
-
+    }
 
     return (
         <div className="relative flex w-full max-w-[24rem] 

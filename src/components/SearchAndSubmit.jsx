@@ -2,19 +2,18 @@
 import { Input, Button } from "@material-tailwind/react";
 import fetchRecipes from "../services/RecipeSearch";
 
-function SearchAndSubmit({ input, setInput, setResults }) {
+function SearchAndSubmit({ input, setInput, setResults, setTo, setMore, setCount}) {
 
     function handleChange(event) {
         setInput(event.target.value)
     }
 
     function handleClick() {
-        fetchRecipes(input).then(
+        fetchRecipes(input, setMore, setCount, setTo).then(
             hits => {
                 setResults(hits)
             }
         )
-        setInput("")
     }
 
     return (

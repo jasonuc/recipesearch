@@ -9,7 +9,7 @@ async function fetchRecipes(mealName, setMore, setCount, setTo) {
     const data = await response.json()
     const { hits, count, more} = data
     setMore(more)
-    setTo(prev => prev + 11)
+    setTo(15 > count ? count : 15)
     setCount(count)
     return hits
   } catch (error) {

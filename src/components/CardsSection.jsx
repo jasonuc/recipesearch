@@ -22,7 +22,7 @@ function CardsSection({ results, more, input, setResults, count, setCount, to, s
                 <RecipeCard key={index} name={recipe.label} ingredients={recipe.ingredientLines} instructions={recipe.url} image={recipe.image} cuisineType={recipe.cuisineType} mealType={recipe.mealType} />
             )}
             </div>
-            {more && <Button onClick={handleClick} className=" box-content mb-4 w-3/4 md:w-1/2 border-2 hover:border-4 hover:tracking-widest border-white text-white bg-terracotta shadow-sm hover:shadow-lg snap-end">Show More</Button>}
+            {more && <Button onClick={handleClick} className=" box-content mb-4 w-3/4 md:w-1/2 border-2 hover:border-4 hover:tracking-widest border-white text-white bg-terracotta shadow-sm hover:shadow-lg snap-always snap-end ">Show More</Button>}
         </div>
     )
 }

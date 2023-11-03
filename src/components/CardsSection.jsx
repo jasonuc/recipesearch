@@ -6,7 +6,7 @@ import { Button } from "@material-tailwind/react";
 function CardsSection({ results, more, input, setResults, count, setCount, to, setTo, setMore }) {
 
     const handleClick = () => {
-        setTo(prev => (prev + 10 > count) ? count : prev + 10)
+        setTo(prev => (prev + 5 > count) ? count : prev + 5)
         fetchRecipesMore(input, to, setMore, setCount).then(
             hits => {
                 setResults(hits)

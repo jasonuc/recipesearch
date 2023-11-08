@@ -21,5 +21,7 @@ module.exports = withMT({
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
 });

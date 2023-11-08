@@ -10,7 +10,7 @@ function RecipeCard({ name, ingredients, instructions, image, cuisineType, mealT
             <div className="mt-5 text-center px-3">
                 <h3 className="font-Oswald text-xl md:text-2xl overflow-hidden my-2">{name}</h3>
                 {(cuisineType && mealType) && <h3 className=" text-gray-500 font-thin text-xs md:text-sm uppercase mb-3 italic pb-2 border-b-2 border-gray-200 border-opacity-35">{cuisineType} | {mealType}</h3>}
-                <p className="min-h-25 md:h-[10rem] overflow-y-auto text-left">{ingredients.join(", ")}</p>
+                <p className="min-h-25 md:h-[10rem] overflow-y-auto text-left scrollbar scrollbar-w-[4px] scrollbar-thumb-red-300 scrollbar-thumb-rounded-lg">{ingredients.join(", ")}</p>
             </div>
             <a href={instructions} target="_blank" rel="noopener noreferrer" className="my-5">
                 <Button color="orange">Learn More</Button>

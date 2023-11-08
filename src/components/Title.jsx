@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 
-function Title({ setInput, setResults }) {
+function Title({ setInput, setResults, setMore }) {
 
     const handleClick = () => {
         setInput("")
         setResults([])
+        setMore(false)
     }
 
     return (

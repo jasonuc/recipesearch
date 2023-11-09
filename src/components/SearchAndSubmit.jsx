@@ -21,7 +21,7 @@ function SearchAndSubmit() {
     }
 
     return (
-        <div className="relative flex w-full max-w-[24rem] 
+        <div id="top" className="relative flex w-full max-w-[24rem] 
         md:w-1/2 rounded-lg bg-white italic font-Agbalumo box-border text-blue-gray-100">
             <Input
                 type="email"

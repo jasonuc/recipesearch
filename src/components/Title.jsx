@@ -1,6 +1,10 @@
 /* eslint-disable react/prop-types */
+import { useContext } from "react"
+import { AppContext } from "../context/AppContext"
 
-function Title({ setInput, setResults, setMore }) {
+function Title() {
+
+    const { setInput, setResults, setMore } = useContext(AppContext)
 
     const handleClick = () => {
         setInput("")

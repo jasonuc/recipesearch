@@ -1,9 +1,13 @@
 /* eslint-disable react/prop-types */
+import { useContext } from "react";
+import { AppContext } from "../context/AppContext";
 import { fetchRecipesMore } from "../services/RecipeSearch";
 import RecipeCard from "./RecipeCard";
 import { Button } from "@material-tailwind/react";
 
-function CardsSection({ results, more, input, setResults, count, setCount, to, setTo, setMore }) {
+function CardsSection() {
+
+    const { results, more, input, setResults, count, setCount, to, setTo, setMore } = useContext(AppContext)
 
     const handleClick = () => {
         setTo(prev => (prev + 5 > count) ? count : prev + 5)

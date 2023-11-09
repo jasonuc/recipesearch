@@ -1,8 +1,12 @@
 /* eslint-disable react/prop-types */
 import { Input, Button } from "@material-tailwind/react";
 import fetchRecipes from "../services/RecipeSearch";
+import { useContext } from "react";
+import { AppContext } from "../context/AppContext";
 
-function SearchAndSubmit({ input, setInput, setResults, setTo, setMore, setCount}) {
+function SearchAndSubmit() {
+
+    const { input, setInput, setResults, setTo, setMore, setCount } = useContext(AppContext)
 
     function handleChange(event) {
         setInput(event.target.value)

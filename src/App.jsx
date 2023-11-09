@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 function App() {
   
   return (
-    <div className=' flex flex-col items-center overflow-x-clip h-screen bg-alabaster snap-y snap-mandatory scrollbar-thin scrollbar-thumb-rounded-md scrollbar-thumb-red-300'>
+    <div className=' w-screen min-h-screen flex flex-col items-center overflow-x-clip snap-y snap-mandatory'>
       <Title />
       <div className=' flex flex-col items-center w-[90%] flex-grow mt-5'>
         <SearchAndSubmit />

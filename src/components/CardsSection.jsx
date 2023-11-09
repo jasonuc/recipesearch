@@ -16,7 +16,6 @@ function CardsSection() {
                 setResults(hits)
             }
         )
-        
     }
 
     return (

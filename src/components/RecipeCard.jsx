@@ -44,9 +44,9 @@ function RecipeCard({ id, name, ingredients, instructions, image, cuisineType, m
                 <a href={instructions} target="_blank" rel="noopener noreferrer" className="my-5">
                     <Button className="font-sometypeMono bg-terracotta">Learn More</Button>
                 </a>
-                {!alreadyLiked ? 
-                <button onClick={likeRecipe} className=" text-terracotta">{isLiked ? <FaHeart size={25} /> : <FaRegHeart size={25} />}</button> : 
-                <button onClick={unlikeRecipe} className=" text-terracotta"><IoIosRemoveCircle size={25} /></button>}
+                {!alreadyLiked ?
+                    <button onClick={likeRecipe} className=" text-terracotta">{isLiked ? <FaHeart size={25} /> : <FaRegHeart size={25} />}</button> :
+                    <button onClick={unlikeRecipe} className=" text-terracotta"><IoIosRemoveCircle size={25} /></button>}
             </div>
         </div>
     );

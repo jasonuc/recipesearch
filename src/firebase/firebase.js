@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
 import { GoogleAuthProvider, getAuth } from "firebase/auth"
+import { collection } from "firebase/firestore"
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_VERCEL_FIREBASE_API_KEY,
@@ -17,4 +18,5 @@ export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app)
 export const googleProvider = new GoogleAuthProvider()
 
-// export const db = getFirestore(db)
+export const db = getFirestore()
+export const likedRecipesRef = collection(db, 'likedRecipes')

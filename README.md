@@ -1,1 +1,1 @@
-# Repice Search Web App made w/ React + Vite
+# Repice Search Web App

@@ -1,2 +1,10 @@
-# Repice Search Web App
-> Built using React, Tailwind, Firebase and Vite
+# Repice Search 
+
+This project was built using:
+
+- React
+- JavaScript
+- Vite
+- TailwindCSS
+- Firebase
+- NodeJS

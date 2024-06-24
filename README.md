@@ -7,4 +7,3 @@ This project was built using:
 - Vite
 - TailwindCSS
 - Firebase
-- NodeJS

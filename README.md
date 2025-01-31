@@ -1,7 +1,6 @@
 # Repice Search 
 
-This project was built using:
-
+Built using:
 - React
 - JavaScript
 - Vite
